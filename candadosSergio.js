@@ -38,7 +38,7 @@ function operativaCandados(resultadoInput3, divJugarNivel) {
             checkAllKeysUsed();
         }
         else {
-            currentLock.style.backgroundImage = "url('/img/candadoTriste.png')";88amp
+            currentLock.style.backgroundImage = "url('/img/candadoTriste.png')";
             // Establecer un temporizador para cambiar la imagen de fondo después de 3 segundos
             setTimeout(function() {
                 currentLock.style.backgroundImage = "url('/img/candadoCerrado.png')";
