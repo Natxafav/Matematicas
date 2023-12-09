@@ -8,36 +8,55 @@
     <audio id="musicaJuegos" src="img/Calimba - E's Jammy Jams.mp3"></audio>
 </head>
 <body>
+    <div id="contenedorGeneral">
+        <div id="contenedorMusica">
+            <button id="toggleMusic"></button>
+            <input type="range" id="volumenRange" min="0" max="1" step="0.1" value="1" style="display: none;">
+            
+        </div>
 
-    <button id="toggleMusic">Musica</button>
-
+        <div id="titulo">
+            <h2>JUEGOS MATEMÁTICOS</h2>
+        </div>
+    </div>
     <script>
-        var musica = document.getElementById("musicaJuegos");
-        var botonMusica = document.getElementById('toggleMusic');
+var musica = document.getElementById("musicaJuegos");
+var botonMusica = document.getElementById('toggleMusic');
+var volumenRange = document.getElementById('volumenRange');
 
-        document.addEventListener('DOMContentLoaded', (event) => {
-            musica.play().catch(error => {
-                console.log("La reproducción automática fue bloqueada por el navegador.");
-            });
-            actualizarIcono(); // Actualizar el icono al cargar
-        });
+document.addEventListener('DOMContentLoaded', (event) => {
+    musica.play().catch(error => {
+        console.log("La reproducción automática fue bloqueada por el navegador.");
+    });
+    actualizarIcono(); // Actualizar el icono al cargar
+});
 
-        function actualizarIcono() {
-            if (musica.paused) {
-                botonMusica.innerHTML = '<img src="img/musicaOff.png" alt="Música Pausada" style="width: 49px;"/>'; // Ajusta el tamaño aquí
-            } else {
-                botonMusica.innerHTML = '<img src="img/musicaOn.png" alt="Reproduciendo Música" style="width: 50px;"/>'; // Ajusta el tamaño aquí
-            }
-        }
-        botonMusica.addEventListener('click', function() {
-            if (musica.paused) {
-                musica.play();
-            } else {
-                musica.pause();
-            }
-            actualizarIcono(); // Actualizar el icono en cada clic
-        });
+function actualizarIcono() {
+    if (musica.paused) {
+        botonMusica.innerHTML = '<img src="img/musicaOff.png" alt="Música Pausada" style="width: 30px;"/>'; // Ajusta el tamaño aquí
+        volumenRange.style.display = 'none'; // Ocultar la rueda de volumen cuando la música está pausada
+    } else {
+        botonMusica.innerHTML = '<img src="img/musicaOn.png" alt="Reproduciendo Música" style="width: 30px;"/>'; // Ajusta el tamaño aquí
+        volumenRange.style.display = 'inline-block'; // Mostrar la rueda de volumen cuando la música está activada
+    }
+}
+
+botonMusica.addEventListener('click', function() {
+    if (musica.paused) {
+        musica.play();
+    } else {
+        musica.pause();
+    }
+    actualizarIcono(); // Actualizar el icono en cada clic
+});
+
+volumenRange.addEventListener('input', function() {
+    musica.volume = volumenRange.value;
+});
+
+
     </script>
+
     <div class="container" id="container">
         <div class="game" id="nivel1">
            
