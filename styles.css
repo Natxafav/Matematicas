@@ -50,8 +50,6 @@ h2 {
 
 
 }
-
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -331,7 +329,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
- 
   
 }
 .globoSeleccionado{

@@ -5,7 +5,7 @@ export { operativaCandados, crearCandadosLlaves, generarNumeros };
 import { jugarNivelFuncion } from "./juegos.js";
 function operativaCandados(resultadoInput3, divJugarNivel) {
     crearCandadosLlaves(resultadoInput3, divJugarNivel);
-    console.log("hola");
+    
     const keys = document.querySelectorAll('.key');
     const locks = document.querySelectorAll('.lock');
 
