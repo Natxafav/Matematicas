@@ -1,7 +1,7 @@
 // No necesitamos exportar `operativaCandados` hasta que no se llame desde otro módulo.
 export { operativaCandados, crearCandadosLlaves, generarNumeros };
 
-// Esta importación parece no ser utilizada en el fragmento de código proporcionado.
+
 import { jugarNivelFuncion } from "./juegos.js";
 function operativaCandados(resultadoInput3, divJugarNivel) {
     crearCandadosLlaves(resultadoInput3, divJugarNivel);
@@ -135,3 +135,4 @@ function crearCandadosLlaves(resultadoInput3, divJugarNivel) {
     divJugarNivel.appendChild(locks);
     divJugarNivel.appendChild(keys);
 }
+
