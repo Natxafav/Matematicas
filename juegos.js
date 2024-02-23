@@ -106,7 +106,7 @@ function crearNuevaPantalla(number) {
             // Creamos el contenedor de ayuda
             const ayuda1 = document.createElement("div");
             ayuda1.className = "ayuda1";
-            ayuda1.style.backgroundImage = "url('./../img/profesor.png')";
+            ayuda1.style.backgroundImage = "url('/../img/profesor.png')";
             ayuda1.style.width = "250px";
             ayuda1.style.height = "250px";
             const ayuda1Titulo = document.createElement("div");
@@ -185,7 +185,7 @@ function crearNuevaPantalla(number) {
 
                     // Limpiar el divJugarNivel y establecer el fondo
                     divJugarNivel.innerHTML = "";
-                    divJugarNivel.style.backgroundImage = "url('./../img/cielo_fondo.png')";
+                    divJugarNivel.style.backgroundImage = "url('/../img/cielo_fondo.png')";
 
                     // Obtener el valor de la operación seleccionada
                     const valorOperacion = operacion.value;
@@ -214,7 +214,7 @@ function crearNuevaPantalla(number) {
             ayuda2Titulo.className = "ayuda2Titulo";
             ayuda2Titulo.style.height = "50px";
             ayuda2Titulo.innerText = "Ordena de mayor a menor."
-            ayuda2.style.backgroundImage = "url('./../img/profesora.png')";
+            ayuda2.style.backgroundImage = "url('/../img/profesora.png')";
             ayuda2.style.width = "250px";
             ayuda2.style.height = "250px";
             divJugarNivel.appendChild(ayuda2);
@@ -265,7 +265,7 @@ function crearNuevaPantalla(number) {
                 } else {
                     // Eliminamos el input y el botón de la pantalla
                     divJugarNivel.innerHTML = "";
-                    divJugarNivel.style.backgroundImage = "url('./../img/fondo2.jpg')";
+                    divJugarNivel.style.backgroundImage = "url('/../img/fondo2.jpg')";
                     const container = document.querySelector(".container");
                               
                     // Iniciamos el juego pasando por parámetro el valor que queremos 
@@ -283,7 +283,7 @@ function crearNuevaPantalla(number) {
             resultadoInput3.placeholder = "Tabla del 1, 2, 3...";
             const ayuda = document.createElement("div");
             ayuda.className = "ayuda3";
-            ayuda.style.backgroundImage = "url('./../img/profesora.png')";
+            ayuda.style.backgroundImage = "url('/../img/profesora.png')";
             ayuda.style.width = "250px";
             ayuda.style.height = "250px";
             const ayuda3Titulo = document.createElement("div");
