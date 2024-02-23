@@ -157,7 +157,7 @@ function crearGlobos(resultadoInput, divJugarNivel, operacion) {
 
             if (score === 5) {
                         const gameContainer1 = document.getElementById('jugarNivel1');
-                        gameContainer1.innerHTML = `<img src="/../img/SUCCESS1.png" alt="Imagen de éxito" style="width: 100%; height: 100%; object-fit: cover;">`;
+                        gameContainer1.innerHTML = `<img src="./img/SUCCESS1.png" alt="Imagen de éxito" style="width: 100%; height: 100%; object-fit: cover;">`;
                         // Establecer un temporizador para cerrar y eliminar el juego después de 5 segundos
                         setTimeout(function() {
                             gameContainer1.style.display = 'none'; // Oculta el contenedor del juego
