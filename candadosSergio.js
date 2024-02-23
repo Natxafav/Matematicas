@@ -33,15 +33,15 @@ function operativaCandados(resultadoInput3, divJugarNivel) {
         const currentLock = this; // Referencia al candado actual
     
         if (draggedValue === lockValue) {
-            currentLock.style.backgroundImage = "url('../img/candadoAbierto.png')";
+            currentLock.style.backgroundImage = "url('./../img/candadoAbierto.png')";
             hideKey(draggedValue);
             checkAllKeysUsed();
         }
         else {
-            currentLock.style.backgroundImage = "url('../img/candadoTriste.png')";
+            currentLock.style.backgroundImage = "url('./../img/candadoTriste.png')";
             // Establecer un temporizador para cambiar la imagen de fondo después de 3 segundos
             setTimeout(function() {
-                currentLock.style.backgroundImage = "url('../img/candadoCerrado.png')";
+                currentLock.style.backgroundImage = "url('./../img/candadoCerrado.png')";
             }, 3000); // 3000 milisegundos equivalen a  segundos
         }
     }
@@ -59,7 +59,7 @@ function operativaCandados(resultadoInput3, divJugarNivel) {
     function checkAllKeysUsed() {
         if (hidenKeys === 0) {
             const gameContainer = document.getElementById('jugarNivel3');
-            gameContainer.innerHTML = `<img src="../img/SUCESS.gif" alt="Imagen de éxito" style="width: 100%; height: 100%; object-fit: cover;">`;
+            gameContainer.innerHTML = `<img src="./../img/SUCESS.gif" alt="Imagen de éxito" style="width: 100%; height: 100%; object-fit: cover;">`;
             
             // Establecer un temporizador para cerrar y eliminar el juego después de 5 segundos
             setTimeout(function() {

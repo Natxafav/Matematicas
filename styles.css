@@ -74,13 +74,13 @@ body{
     aspect-ratio: auto 1 / 1; /* Si la imagen es cuadrada, ajustar este valor a la relación de aspecto de la imagen */
   }
   #nivel1 {
-    background-image: url('../img/imagenJuego1.png');
+    background-image: url('./../img/imagenJuego1.png');
   }
   #nivel2 {
-    background-image: url('../img/imagenJuego2.png');
+    background-image: url('./../img/imagenJuego2.png');
   }
   #nivel3 {
-    background-image: url('../img/imagenJuego3.png');
+    background-image: url('./../img/imagenJuego3.png');
     
   }
   
@@ -122,7 +122,7 @@ body{
     background-size: cover;
     display: flex;
     justify-content: space-around;
-    background-image:url('../img/Fondo.png');
+    background-image:url('./../img/Fondo.png');
     background-repeat: no-repeat;
     min-width: 700px;
     min-height: 500px;
@@ -178,7 +178,7 @@ body{
   
   .instrucciones3 {
     background-color: rgb(240, 244, 244);
-    cursor: url('../img/interrogacion.png'),auto;
+    cursor: url('./../img/interrogacion.png'),auto;
     color: #000000;
     font-size: larger;
     font-weight: bolder;
@@ -189,8 +189,8 @@ body{
   .instrucciones3:hover .tooltip {
     visibility: visible;
     opacity: 1;
-    cursor: url('../img/interrogacion.png');
-    cursor: url('../img/candadoTriste.png');
+    cursor: url('./../img/interrogacion.png');
+    cursor: url('./../img/candadoTriste.png');
   }
   
   .tooltip {
@@ -289,7 +289,7 @@ body{
   }
   .lock {
     border-color: red;
-    background-image: url('../img/candadoCerrado.png');
+    background-image: url('./../img/candadoCerrado.png');
     background-size: contain; /* Ajusta la imagen completa dentro del elemento */
     background-position: center;
     background-repeat: no-repeat; /* Asegúrate de que la imagen no se repita */
@@ -307,7 +307,7 @@ body{
     padding-top: 35px;
   }
   .key {
-    background-image: url('../img/llave.png');
+    background-image: url('./../img/llave.png');
     background-size: contain; /* Ajusta la imagen completa dentro del elemento */
     background-position: center;
     background-repeat: no-repeat; /* Asegúrate de que la imagen no se repita */
